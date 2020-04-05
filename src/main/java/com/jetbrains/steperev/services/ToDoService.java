@@ -30,7 +30,11 @@ public class ToDoService {
         DialogService addTaskDialog = new DialogService();
         String task = addTaskDialog.selectValue();
 
-        if (task != null && task.length() == 0) {
+        if (task == null) {
+            return;
+        }
+
+        if (task.length() == 0) {
             showMessageDialog(null, "You can not add en empty task!");
             return;
         }
