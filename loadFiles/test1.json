@@ -1,4 +1,7 @@
 {
   "task": "blabla",
-  "checked": 1
+  "checked": 1,
+
+  "task": "aaaa",
+  "checked": 0
 }

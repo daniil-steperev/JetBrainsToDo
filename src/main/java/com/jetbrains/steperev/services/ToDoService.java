@@ -1,7 +1,6 @@
 package com.jetbrains.steperev.services;
 
 import com.jetbrains.steperev.list.CheckBoxList;
-import res.ResourceLoader;
 
 import javax.swing.*;
 import java.awt.*;
@@ -69,7 +68,7 @@ public class ToDoService {
         RemoveDialogService removeDialog = new RemoveDialogService(tasks);
         ArrayList<JCheckBox> selectedTasks = removeDialog.selectValue();
 
-        if (selectedTasks != null || selectedTasks.size() != 0) {
+        if (selectedTasks != null) {
             for (JCheckBox task : selectedTasks) {
                 for (int i = 0; i < tasks.size(); i++) {
                     JCheckBox curElem = tasks.get(i);

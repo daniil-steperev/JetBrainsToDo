@@ -14,7 +14,6 @@ public class JsonService {
         ArrayList<JCheckBox> tasks = new ArrayList<>();
 
         try (JsonReader reader = new JsonReader(new FileReader(fileName))) {
-            System.out.println("HERERE");
             reader.beginObject();
 
             String task = null;
@@ -22,7 +21,7 @@ public class JsonService {
 
                 String element = reader.nextName();
                 int checked;
-                Boolean isChecked = null;
+                Boolean isChecked;
 
                 if (element.equals("task")) {
                     task = reader.nextString(); // get task text
