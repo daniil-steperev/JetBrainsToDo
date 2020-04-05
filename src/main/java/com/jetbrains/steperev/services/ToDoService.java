@@ -1,13 +1,16 @@
 package com.jetbrains.steperev.services;
 
 import com.jetbrains.steperev.list.CheckBoxList;
+import res.ResourceLoader;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Objects;
 
 import static javax.swing.JOptionPane.showMessageDialog;
 
@@ -24,9 +27,12 @@ public class ToDoService {
         return tasks;
     }
 
-    public void addNewTask(String task) {
-        if (tasks.contains(task)) {
-            showMessageDialog(null, "This task is already added!");
+    public void addNewTask() {
+        DialogService addTaskDialog = new DialogService();
+        String task = addTaskDialog.selectValue();
+
+        if (task != null && task.length() == 0) {
+            showMessageDialog(null, "You can not add en empty task!");
             return;
         }
 
@@ -59,22 +65,54 @@ public class ToDoService {
         refreshTaskList();
     }
 
-    public void removeFromList(ArrayList<JCheckBox> removedTasks) {
-        for (JCheckBox task : removedTasks) {
-            for (int i = 0; i < tasks.size(); i++) {
-                JCheckBox curElem = tasks.get(i);
-                if (curElem.getText().equals(task.getText())) {
-                    tasks.remove(i);
-                    break;
+    public void removeFromList() {
+        RemoveDialogService removeDialog = new RemoveDialogService(tasks);
+        ArrayList<JCheckBox> selectedTasks = removeDialog.selectValue();
+
+        if (selectedTasks != null || selectedTasks.size() != 0) {
+            for (JCheckBox task : selectedTasks) {
+                for (int i = 0; i < tasks.size(); i++) {
+                    JCheckBox curElem = tasks.get(i);
+                    if (curElem.getText().equals(task.getText())) {
+                        tasks.remove(i);
+                        break;
+                    }
                 }
+            }
+
+            refreshTaskList();
+        }
+    }
+
+    public void loadTasks() {
+        DialogService loadDialog = new DialogService();
+        String fileName = loadDialog.selectValue() + ".json";
+
+        File loadFile = null;
+        File folder = ResourceLoader.getQuestionsFolder();
+        for (File f : Objects.requireNonNull(folder.listFiles())) {
+            if (f.getName().equals(fileName)) {
+                loadFile = f;
+                break;
             }
         }
 
-        refreshTaskList();
-    }
+        if (loadFile == null) {
+            showMessageDialog(null, "Put your file to the directory, please!");
+            return;
+        }
 
-    public void loadTasks(String fileName) {
+        String folderDir = ResourceLoader.getFolderName();
+        System.out.println(folderDir + fileName);
+        JsonService jsonService = new JsonService();
+        ArrayList<JCheckBox> loadedTasks = jsonService.loadTasks(folderDir + fileName);
 
+        if (loadedTasks != null) {
+            for (JCheckBox task : loadedTasks) {
+                list.addCheckbox(task);
+                tasks.add(task);
+            }
+        }
     }
 
     private void refreshTaskList() {
