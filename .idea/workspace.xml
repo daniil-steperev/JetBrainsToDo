@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jetbrains/steperev/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+            <state relative-caret-position="733">
+              <caret line="48" column="73" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#745#1245#0" expanded="true" />
@@ -28,13 +28,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jetbrains/steperev/services/ToDoService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+            <state relative-caret-position="85">
+              <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#861#1187#0" expanded="true" />
                 <element signature="e#1186#1187#0" expanded="true" />
               </folding>
@@ -42,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jetbrains/steperev/services/RemoveDialogService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="117" column="1" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
+            <state relative-caret-position="291">
+              <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1693#1861#0" expanded="true" />
@@ -54,7 +53,7 @@
                 <element signature="e#1897#2063#0" expanded="true" />
                 <element signature="e#2062#2063#0" expanded="true" />
                 <element signature="e#2289#2300#0" expanded="true" />
-                <element signature="e#2626#2637#0" expanded="true" />
+                <element signature="e#2673#2684#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,9 +81,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jetbrains/steperev/App.form" />
         <option value="$PROJECT_DIR$/src/main/java/com/jetbrains/steperev/list/CheckBoxList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jetbrains/steperev/services/DialogService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jetbrains/steperev/services/RemoveDialogService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jetbrains/steperev/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jetbrains/steperev/services/ToDoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jetbrains/steperev/services/RemoveDialogService.java" />
       </list>
     </option>
   </component>
@@ -175,7 +174,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586087354088" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586087825527" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib/javafx.base.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -232,23 +231,22 @@
       <option name="presentableId" value="Default" />
       <updated>1585843791998</updated>
       <workItem from="1585843798155" duration="10895000" />
-      <workItem from="1586008006039" duration="9679000" />
+      <workItem from="1586008006039" duration="10295000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20574000" />
+    <option name="totallyTimeSpent" value="21190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.29878542" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.29878542" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -257,7 +255,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32931036" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.096551724" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.19827586" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32931036" />
@@ -279,7 +277,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.29878542" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.29878542" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -288,7 +286,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32931036" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.096551724" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.19827586" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32931036" />
@@ -385,26 +383,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jetbrains/steperev/services/RemoveDialogService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jetbrains/steperev/services/ToDoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="117" column="1" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1693#1861#0" expanded="true" />
-            <element signature="e#1860#1861#0" expanded="true" />
-            <element signature="e#1897#2063#0" expanded="true" />
-            <element signature="e#2062#2063#0" expanded="true" />
-            <element signature="e#2289#2300#0" expanded="true" />
-            <element signature="e#2626#2637#0" expanded="true" />
+            <element signature="e#861#1187#0" expanded="true" />
+            <element signature="e#1186#1187#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jetbrains/steperev/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+        <state relative-caret-position="733">
+          <caret line="48" column="73" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#745#1245#0" expanded="true" />
@@ -415,14 +408,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jetbrains/steperev/services/ToDoService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jetbrains/steperev/services/RemoveDialogService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+        <state relative-caret-position="291">
+          <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#861#1187#0" expanded="true" />
-            <element signature="e#1186#1187#0" expanded="true" />
+            <element signature="e#1693#1861#0" expanded="true" />
+            <element signature="e#1860#1861#0" expanded="true" />
+            <element signature="e#1897#2063#0" expanded="true" />
+            <element signature="e#2062#2063#0" expanded="true" />
+            <element signature="e#2289#2300#0" expanded="true" />
+            <element signature="e#2673#2684#0" expanded="true" />
           </folding>
         </state>
       </provider>

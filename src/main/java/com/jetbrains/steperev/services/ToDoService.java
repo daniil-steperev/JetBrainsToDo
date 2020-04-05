@@ -8,7 +8,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 
 import static javax.swing.JOptionPane.showMessageDialog;
 
@@ -62,7 +61,13 @@ public class ToDoService {
 
     public void removeFromList(ArrayList<JCheckBox> removedTasks) {
         for (JCheckBox task : removedTasks) {
-            tasks.remove(task);
+            for (int i = 0; i < tasks.size(); i++) {
+                JCheckBox curElem = tasks.get(i);
+                if (curElem.getText().equals(task.getText())) {
+                    tasks.remove(i);
+                    break;
+                }
+            }
         }
 
         refreshTaskList();
